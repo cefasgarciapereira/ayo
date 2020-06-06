@@ -25,6 +25,8 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
+  console.log('Site metadata', site.siteMetadata);
+
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -67,6 +69,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: 'viewport',
+          content:"width=device-width, initial-scale=1, shrink-to-fit=no"
+        }
       ].concat(meta)}
     />
   )

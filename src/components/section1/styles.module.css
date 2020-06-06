@@ -1,0 +1,87 @@
+.section1{
+    padding: 0 9rem;
+}
+
+.section1 h3{
+    margin-bottom: 1.5rem;
+}
+
+.section1 p{
+    line-height: 3rem;
+}
+
+.planning{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.planning p, .planning h3{
+    text-align: right;
+}
+
+.planning img{
+    width: 50rem;
+}
+
+.section1Text, .collab img{
+    width: 50rem;
+    margin-left: 50vw;
+}
+
+.collab{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.collabText{
+    width: 40rem;
+}
+
+@media (max-width: 1024px) 
+{
+    .section1Text, .collab img{
+        margin-left: 20vw;
+    }
+}
+
+@media (max-width: 425px) 
+{   
+    .planning, .collab, .easy{
+        margin: 2.5rem 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .planning img, .collab img{
+        margin: 5rem 0;
+    }
+
+    .collab{
+        flex-direction: column;
+        margin: 5rem 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .planning p, .planning h3{
+        text-align: center;
+    }
+
+    .planning img{
+        width: 25rem;
+    }
+
+    .section1Text, .collab img{
+        width: 25rem;
+        margin-left: 0;
+    }
+
+    .collabText{
+        width: 25rem;
+    }
+}

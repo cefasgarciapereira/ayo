@@ -1,10 +1,7 @@
 import React from "react"
 import styles from './styles.module.css';
 
-export default function Header(){
-
-  console.log(window.innerWidth);
-  
+export default function Header(){  
   return (
     <header>
       <p className={styles.logo}>AYO</p>

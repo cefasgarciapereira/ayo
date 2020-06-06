@@ -29,28 +29,28 @@ p{
     color: rgba(0,0,0,0.5);
 }
 
-@media (max-width: 1024px) 
+@media (max-width: 1400px) 
 {
-    html{
-        font-size: 50%;
-    }
-
     h1{
         font-size: 7.6rem;
     }
 }
 
-@media (max-width: 768px) 
+@media (max-width: 1240px) 
 {
     h1{
         font-size: 5.4rem;
     }
 }
 
-@media (max-width: 320px) 
+@media (max-width: 950px) 
 {
     h1{
         font-size: 4.4rem;
+    }
+
+    html{
+        font-size: 62.5%;
     }
 }
 

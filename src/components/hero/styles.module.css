@@ -3,7 +3,6 @@
     flex-direction: column;
     width: 100%;
 }
-
 .heroContentArea{
     display: flex;
     flex-direction: row;
@@ -28,22 +27,19 @@
       transparent 77%, transparent);
     background-size:220px 220px;
 }
-
 .left{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50vw;
     padding: 0 0 0 9rem;
+    z-index: 2;
 }
-
 .left h1{
     margin-bottom: 2.5rem;
     font-weight: 900;
     color: white;
 }
-
-
 .text{
     color: white;
     font-weight: 300;
@@ -76,6 +72,7 @@
     margin-top: 18.2rem;
     right: 18rem;
     position: absolute;
+    z-index: 0;
 }
 
 .heroWhiteArea{
@@ -84,7 +81,7 @@
     background-color: white;
 }
 
-@media (max-width: 1024px) 
+@media (max-width: 1280px) 
 {
     .building{
         height: 56rem;
@@ -95,7 +92,7 @@
     }
 }
 
-@media (max-width: 768px) 
+@media (max-width: 1100px) 
 {
     .building{
         height: 42rem;
@@ -106,7 +103,22 @@
     }
 }
 
-@media (max-width: 425px) 
+@media (max-width: 870px) 
+{
+    .building{
+        height: 36rem;
+        width: 24rem;
+        margin-top: 20rem;
+        right: 18rem;
+        position: absolute;
+    }
+
+    .heroWhiteArea{
+        height: 10vh;
+    }
+}
+
+@media (max-width: 690px) 
 {
     .heroContentArea{
         flex-direction: column;

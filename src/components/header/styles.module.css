@@ -1,24 +1,26 @@
 .header{
     overflow: hidden;
-    padding: 2rem 10rem;
-    background-color: #20336c;
+    padding: 3rem 10rem;
     color: white;
+    border-bottom: solid 1px white;
 
+    /*grid css*/
+    background-color: #20336c;
     background-image:
     linear-gradient(0deg, transparent 24%,
-      rgba(255, 255, 255, .02) 25%,
-      rgba(255, 255, 255, .02) 26%,
-      transparent 27%, transparent 74%,
-      rgba(255, 255, 255, .1) 75%, 
-      rgba(255, 255, 255, .1) 76%,
-      transparent 77%, transparent),
+        rgba(255, 255, 255, .02) 25%,
+        rgba(255, 255, 255, .02) 26%,
+        transparent 27%, transparent 74%,
+        rgba(255, 255, 255, .1) 75%, 
+        rgba(255, 255, 255, .1) 76%,
+        transparent 77%, transparent),
     linear-gradient(90deg, transparent 24%, 
-      rgba(255, 255, 255, .02) 25%, 
-      rgba(255, 255, 255, .02) 26%,
-      transparent 27%, transparent 74%, 
-      rgba(255, 255, 255, .1) 75%, 
-      rgba(255, 255, 255, .1) 76%,
-      transparent 77%, transparent);
+        rgba(255, 255, 255, .02) 25%, 
+        rgba(255, 255, 255, .02) 26%,
+        transparent 27%, transparent 74%, 
+        rgba(255, 255, 255, .1) 75%, 
+        rgba(255, 255, 255, .1) 76%,
+        transparent 77%, transparent);
     background-size:220px 220px;
 }
 

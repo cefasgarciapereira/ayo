@@ -1,4 +1,5 @@
 .header{
+<<<<<<< HEAD
     display: grid;
     grid-template-areas: "logo nav";
     padding: 3rem;
@@ -6,6 +7,31 @@
     font-weight: 700;
     color: #fff;
     border-bottom: 1px solid #fff;
+=======
+    overflow: hidden;
+    padding: 3rem 10rem;
+    color: white;
+    border-bottom: solid 1px white;
+
+    /*grid css*/
+    background-color: #20336c;
+    background-image:
+    linear-gradient(0deg, transparent 24%,
+        rgba(255, 255, 255, .02) 25%,
+        rgba(255, 255, 255, .02) 26%,
+        transparent 27%, transparent 74%,
+        rgba(255, 255, 255, .1) 75%, 
+        rgba(255, 255, 255, .1) 76%,
+        transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, 
+        rgba(255, 255, 255, .02) 25%, 
+        rgba(255, 255, 255, .02) 26%,
+        transparent 27%, transparent 74%, 
+        rgba(255, 255, 255, .1) 75%, 
+        rgba(255, 255, 255, .1) 76%,
+        transparent 77%, transparent);
+    background-size:220px 220px;
+>>>>>>> 9b6f339af4a6712d29c1d5a7edf9331aa3238351
 }
 
 .nav{

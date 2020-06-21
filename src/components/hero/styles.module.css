@@ -2,6 +2,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -55,8 +56,83 @@
         max-width: 100vw;
         min-height: 80vh;
         text-align: left;
+=======
+    max-width: 100vw;
+    min-height: 80vh;
+}
+
+.gridBackground{
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    width: 100vw;
+    /*grid css*/
+    background-color: #20336c;
+    background-image:
+    linear-gradient(0deg, transparent 24%,
+      rgba(255, 255, 255, .02) 25%,
+      rgba(255, 255, 255, .02) 26%,
+      transparent 27%, transparent 74%,
+      rgba(255, 255, 255, .1) 75%, 
+      rgba(255, 255, 255, .1) 76%,
+      transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, 
+      rgba(255, 255, 255, .02) 25%, 
+      rgba(255, 255, 255, .02) 26%,
+      transparent 27%, transparent 74%, 
+      rgba(255, 255, 255, .1) 75%, 
+      rgba(255, 255, 255, .1) 76%,
+      transparent 77%, transparent);
+    background-size:220px 220px;
+    z-index: -1;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 50% auto 10%;
+    max-width: 100vw;
+    max-height: 70vh;
+    overflow: hidden;
+    padding: 10rem;
+}
+
+.text{
+    overflow: hidden;
+}
+
+.imageContainer{
+    overflow: hidden;
+    padding: 5rem;
+}
+
+.scroll{
+    writing-mode: vertical-rl;
+    font-size: 1.8rem;
+    letter-spacing: .5rem;
+    font-weight: 100;
+    color: white;
+    padding: 8rem 4rem;
+}
+
+.text h1{
+    font-size: 8rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.text p{
+    font-size: 2.4rem;
+    color: white;
+}
+
+@media (max-width: 1330px) 
+{
+    .text h1{
+        font-size: 5rem;
+>>>>>>> 9b6f339af4a6712d29c1d5a7edf9331aa3238351
     }
 
+<<<<<<< HEAD
     .gridBackground{
         position: absolute;
         top: 0;
@@ -80,8 +156,15 @@
           transparent 77%, transparent);
         background-size:220px 220px;
         z-index: -1;
+=======
+@media (max-width: 960px) 
+{
+    .text h1{
+        font-size: 4rem;
+>>>>>>> 9b6f339af4a6712d29c1d5a7edf9331aa3238351
     }
 
+<<<<<<< HEAD
     .gridContainer{
         display: grid;
         grid-template-columns: 50% auto 10%;
@@ -97,8 +180,32 @@
         font-weight: 100;
         color: white;
         padding: 8rem 4rem;
+=======
+/*tablet*/
+@media (max-width: 830px) 
+{
+    .gridContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
+    .text{
+        height: auto;
+        text-align: center;
+        min-height: 25rem;
+    }
+
+    .imageContainer{
+        align-content: center;
+    }
+
+    .scroll{
+        display: none;
+>>>>>>> 9b6f339af4a6712d29c1d5a7edf9331aa3238351
+    }
+
+<<<<<<< HEAD
     .imageContainer{
         position: relative;
         width: 50rem;
@@ -119,12 +226,51 @@
 @media(min-width: 960px){
     .text h1{
         font-size: 5.6rem;
+=======
+/*mobile*/
+@media (max-width: 560px) 
+{
+    .hero{
+        /*grid css*/
+        background-color: #20336c;
+        background-image:
+        linear-gradient(0deg, transparent 24%,
+        rgba(255, 255, 255, .02) 25%,
+        rgba(255, 255, 255, .02) 26%,
+        transparent 27%, transparent 74%,
+        rgba(255, 255, 255, .1) 75%, 
+        rgba(255, 255, 255, .1) 76%,
+        transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, 
+        rgba(255, 255, 255, .02) 25%, 
+        rgba(255, 255, 255, .02) 26%,
+        transparent 27%, transparent 74%, 
+        rgba(255, 255, 255, .1) 75%, 
+        rgba(255, 255, 255, .1) 76%,
+        transparent 77%, transparent);
+        background-size:220px 220px;
+        z-index: -1;
+    }
+
+    .imageContainer, .gridBackground{
+        display: none;
+>>>>>>> 9b6f339af4a6712d29c1d5a7edf9331aa3238351
     }
 }
 
+<<<<<<< HEAD
 @media (min-width: 1330px) {
 
     .text h1{
         font-size: 8rem;
+=======
+    .text h1{
+        font-size: 4rem;
+        }
+    
+    .text p{
+        font-size: 1.4rem;
+        color: white;
+>>>>>>> 9b6f339af4a6712d29c1d5a7edf9331aa3238351
     }
 }

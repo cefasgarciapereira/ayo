@@ -1,0 +1,44 @@
+.section3{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section3 div{
+    align-self: center;
+    justify-self: center;
+}
+
+.section3 h3{
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.underlineText{
+    display: inline-flex;
+    border-bottom: 5px solid #20336C;
+}
+
+.section3 p{
+    padding: 10px;
+    text-align: center;
+}
+
+@media (min-width: 1100px) 
+{
+    .section3{
+        flex-direction: row;
+        padding: 100px;
+    }    
+
+    .section3 h3{
+        text-align: left;
+    }
+
+    .section3 p{
+        text-align: left;
+        padding: 0;
+    }
+}

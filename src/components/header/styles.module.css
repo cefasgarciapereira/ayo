@@ -1,50 +1,47 @@
 .header{
-    overflow: hidden;
-    padding: 2rem 10rem;
-    background-color: #20336c;
-    color: white;
-
-    background-image:
-    linear-gradient(0deg, transparent 24%,
-      rgba(255, 255, 255, .02) 25%,
-      rgba(255, 255, 255, .02) 26%,
-      transparent 27%, transparent 74%,
-      rgba(255, 255, 255, .1) 75%, 
-      rgba(255, 255, 255, .1) 76%,
-      transparent 77%, transparent),
-    linear-gradient(90deg, transparent 24%, 
-      rgba(255, 255, 255, .02) 25%, 
-      rgba(255, 255, 255, .02) 26%,
-      transparent 27%, transparent 74%, 
-      rgba(255, 255, 255, .1) 75%, 
-      rgba(255, 255, 255, .1) 76%,
-      transparent 77%, transparent);
-    background-size:220px 220px;
+    display: grid;
+    grid-template-areas: "logo nav";
+    padding: 3rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 1px solid #fff;
 }
 
-.header a {
-    float: left;
-    text-align: center;
-    padding: 1rem 1.2rem;
-    text-decoration: none;
-    font-size: 1.8rem; 
-    line-height: 2.5rem;
-    font-weight: bold;
+.nav{
+    grid-area: 'nav';
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
 }
 
-.header a.logo {
+.logo{
+    color: #fff;
     font-size: 3.6rem;
-    font-weight: 900;
-    color: white;
-    overflow: hidden;
-  }
-  
-  .header a:hover {
-      cursor: pointer;
-      padding: .5rem 1.2rem;
-      border-bottom: solid 5px white;
-  }
-  
-  .header-right {
-    float: right;
-  }
+}
+
+.burguer{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 5vh;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .burguer{
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+}

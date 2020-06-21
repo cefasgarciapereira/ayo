@@ -8,7 +8,7 @@ import Section1 from '../components/section1'
 
 const IndexPage = () => (
     <div>
-      <SEO title="Home" />
+      <SEO title="AYO" />
       <Header/>
       <Hero/>
       <Section1/>

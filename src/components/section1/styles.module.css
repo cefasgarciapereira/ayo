@@ -3,40 +3,75 @@
 }
 
 .section1 h3{
-    margin-bottom: 1.5rem;
+    font-size: 3.6rem;
 }
 
-.section1 p{
-    line-height: 3rem;
+.sectionItem{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-.planning{
+.sectionItemText{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-
-.planning p, .planning h3{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     text-align: right;
 }
 
-.planning img{
-    width: 50rem;
+.sectionItemTextLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.section1Text, .collab img{
-    width: 50rem;
-    margin-left: 50vw;
-}
-
-.collab{
+.rightImage{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.collabText{
-    width: 40rem;
+@media (max-width: 1200px) 
+{
+    .section1 img{
+        width: 80%;
+    }
 }
+
+@media (max-width: 768px) 
+{
+    .sectionItem{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .sectionItemText, .sectionItemTextLeft{
+        margin: 2rem 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rightImage{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .section1 :nth-child(2){
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 380px) 
+{
+    .section1 h3{
+        font-size: 1.6rem;
+    }
+}
+

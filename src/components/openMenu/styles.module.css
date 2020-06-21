@@ -1,0 +1,19 @@
+.openMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 63vh;
+    padding: 100px 0;
+    position: absolute;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+    background-color: #20336c;
+}
+
+.openMenu a{
+    margin: 15px 0;
+}

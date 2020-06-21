@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p{
+    font-weight: 300;
+    margin: 25px;
+}
+
+.socialMedia{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+
+@media (min-width: 600px) 
+{
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5rem 10rem;
+    }
+
+    .footer p{
+        margin: 0;
+    }
+}

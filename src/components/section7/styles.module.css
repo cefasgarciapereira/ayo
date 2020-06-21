@@ -1,0 +1,31 @@
+.section7{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section7Item{
+    max-width: 250px;
+    margin: 25px 0;
+}
+
+.section7Item h3{
+    font-size: 1.8rem;
+}
+
+@media (min-width: 900px) 
+{
+    .section7{
+        flex-direction: row;
+        justify-content: center;
+        height: 40rem;
+    }
+
+    .section7Item{
+        margin: 5rem;        
+    }
+}

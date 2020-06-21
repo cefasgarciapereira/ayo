@@ -5,6 +5,11 @@ import SEO from "../components/seo"
 import Header from '../components/header'
 import Hero from '../components/hero'
 import Section1 from '../components/section1'
+import Section3 from '../components/section3'
+import Section4 from '../components/section4'
+import Section6 from '../components/section6'
+import Section7 from '../components/section7'
+import Footer from '../components/footer'
 
 const IndexPage = () => (
     <div>
@@ -12,6 +17,17 @@ const IndexPage = () => (
       <Header/>
       <Hero/>
       <Section1/>
+      <Section3/>
+      <Section4/>
+      <Section6/>
+      <Section7/>
+      <Footer/>
+    </div>
+)
+
+export default IndexPage
+
+/*
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
@@ -20,7 +36,4 @@ const IndexPage = () => (
       </div>
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </div>
-)
-
-export default IndexPage
+*/

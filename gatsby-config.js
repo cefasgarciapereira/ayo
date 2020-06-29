@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `AYO Construtora & Engenharia`,
     description: `A AYO é uma empresa que atua no ramo da engenharia civil e tem como missão entregar e realizar projetos de construção que atendam as necessidades de seus clientes.`,
-    author: `@cefas`,
+    author: `Cefas Garcia Pereira`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -11,6 +11,7 @@
 .section7Item{
     max-width: 250px;
     margin: 25px 0;
+    overflow: hidden;
 }
 
 .section7Item h3{

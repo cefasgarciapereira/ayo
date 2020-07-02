@@ -18,7 +18,7 @@ export default function Section3(){
             </Fade>
             <Fade right>
                 <div>
-                    <img src={ayoPocos} style={{width: '100%'}}/>
+                    <img src={ayoPocos} style={{width: '100%'}} alt="Logo da ayo engenharia"/>
                 </div>
             </Fade>
         </div>

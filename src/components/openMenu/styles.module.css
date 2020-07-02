@@ -12,6 +12,7 @@
     color: #fff;
     font-weight: bold;
     background-color: #20336c;
+    z-index: 2000;
 }
 
 .openMenu a{

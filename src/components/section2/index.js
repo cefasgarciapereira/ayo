@@ -1,23 +1,37 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Fade from 'react-reveal/Fade'
 import styles from './styles.module.css'
-const planta = require('../../images/planta.png')
-const cozinha = require('../../images/cozinha.png')
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
+import cozinha from '../../images/cozinha.png'
+import sala from '../../images/sala.png'
+import quarto from '../../images/quarto.png'
+import banheiro from '../../images/banheiro.png'
+import planta_cozinha from '../../images/planta_cozinha.png'
+import planta_sala from '../../images/planta_sala.png'
+import planta_quarto from '../../images/planta_quarto.png'
+import planta_banheiro from '../../images/planta_banheiro.png'
 
 export default function Section2(){
-    const [offset, setOffset] = useState({x: 1, y: 1});
+    const [index, setIndex] = useState(0);
+    const [labels] = useState(['Cozinha','Sala','Quarto','Banheiro'])
+    const [projetos] = useState([cozinha,sala,quarto,banheiro])
+    const [plantas] = useState([planta_cozinha,planta_sala,planta_quarto,planta_banheiro])
 
-    useEffect(() => {
-        updateOffset(window.innerWidth, window.innerHeight);
-    },[])
-
-    function updateOffset(newX, newY){
-        console.log('Atualizou offset');
-        setOffset({
-            x: newX - (newX*1.25),
-            y: newY - (newY*1.12)});
+    function incrementIndex(){
+        if(index < projetos.length - 1){
+            setIndex(index + 1)
+        }else{
+            setIndex(0)
+        }
     }
 
+    function decrementIndex(){
+        if(index > 0){
+            setIndex(index - 1)
+        }else{
+            setIndex(projetos.length - 1)
+        }
+    }
 
     return(
         <div className={styles.section2}>
@@ -30,15 +44,15 @@ export default function Section2(){
 
                 <div className={styles.plantaAndProjectContainer}>
                     <div className={styles.plantaContainer}>
-                        <img src={planta}/>
+                        <img src={plantas[index]} alt="Planta do apartamento"/>
                     </div>
 
                     <div className={styles.projetoContainer}>
-                        <h3>1. Cozinha</h3>
-                        <img src={cozinha}/>
+                        <h3>{index+1}. {labels[index]}</h3>
+                        <img src={projetos[index]} alt="Projeto em 3d do apartamento"/>
                         <div className={styles.bottomButtonContainer}>
-                            <a>Voltar</a>
-                            <a>Próximo</a>
+                            <BsArrowLeft className={styles.section2icon} size={32} color={"rgba(0,0,0,.5)"} onClick={() => decrementIndex()}/>
+                            <BsArrowRight className={styles.section2icon} size={32} color={"rgba(0,0,0,.5)"} onClick={() => incrementIndex()}/>
                         </div>
                     </div>
                 </div>

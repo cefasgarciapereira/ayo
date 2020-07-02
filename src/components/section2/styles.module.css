@@ -45,6 +45,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    -webkit-animation: flash linear 2s 15;
+    animation: flash linear 2s 15;
+}
+
+@-webkit-keyframes flash {
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
 }
 
 .bottomButtonContainer a{
@@ -60,6 +72,10 @@
     color: white;
 }
 
+.section2icon:hover{
+    cursor: pointer;
+}
+
 @media (min-width: 768px) 
 {
     .plantaAndProjectContainer{
@@ -67,5 +83,15 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .plantaContainer, .projetoContainer{
+        width: 40vw;
+        margin: 20px;
+        overflow: hidden;
+    }
+
+    .plantaContainer img, .projetoContainer img{
+        object-fit: cover;
     }
 }

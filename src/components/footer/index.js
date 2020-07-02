@@ -8,7 +8,7 @@ export default function Footer(){
 
     return(
         <div className={styles.footer}>
-            <p>AYO Construtora 2020, Todos os direitos reservados.</p>
+            <p>AYO Engenharia 2020, Todos os direitos reservados.</p>
             <div className={styles.socialMedia}>
                 <FiFacebook size={24} color={iconColor}/>
                 <FiTwitter size={24} color={iconColor}/>

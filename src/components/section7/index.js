@@ -17,6 +17,7 @@ export default function section7(){
                     <FiPhone size={68} color={'#F99920'}/>
                     <h3>Telefone</h3>
                     <p>(35) 3714-2481</p>
+                    <p>(35) 9 9158-6906</p>
                 </div>
 
                 <div className={styles.section7Item}>

@@ -3,3 +3,7 @@
     height: 40rem;
     width: 100vw; 
 }
+
+.googlemaps img{
+    object-fit: cover;
+}

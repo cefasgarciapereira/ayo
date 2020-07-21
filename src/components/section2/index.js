@@ -10,6 +10,7 @@ import planta_cozinha from '../../images/planta_cozinha.png'
 import planta_sala from '../../images/planta_sala.png'
 import planta_quarto from '../../images/planta_quarto.png'
 import planta_banheiro from '../../images/planta_banheiro.png'
+import onofrio from '../../images/onofrio.png'
 
 export default function Section2(){
     const [index, setIndex] = useState(0);
@@ -36,24 +37,34 @@ export default function Section2(){
     return(
         <div className={styles.section2}>
             <Fade clear cascade>
-                <div>
+                <div className={styles.introduction}>
                     <h2>Explore nosso projeto</h2>
-                    <p>Interaja com a planta para que você possa conhecer melhor nosso projeto  e o trabalho que entregamos. 
-                        Com a gente, você monta o apartamento exatamente da forma que achar melhor.</p>
+                    <img src={onofrio} alt="Logo do Onofrio Residenziale"/>
                 </div>
 
-                <div className={styles.plantaAndProjectContainer}>
-                    <div className={styles.plantaContainer}>
-                        <img src={plantas[index]} alt="Planta do apartamento"/>
-                    </div>
-
-                    <div className={styles.projetoContainer}>
-                        <h3>{index+1}. {labels[index]}</h3>
-                        <img src={projetos[index]} alt="Projeto em 3d do apartamento"/>
-                        <div className={styles.bottomButtonContainer}>
-                            <BsArrowLeft className={styles.section2icon} size={32} color={"rgba(0,0,0,.5)"} onClick={() => decrementIndex()}/>
-                            <BsArrowRight className={styles.section2icon} size={32} color={"rgba(0,0,0,.5)"} onClick={() => incrementIndex()}/>
+                <div className={styles.bottom}>
+                    <div className={styles.plantaAndProjectContainer}>
+                        <div className={styles.plantaContainer}>
+                            <img src={plantas[index]} alt="Planta do apartamento"/>
+                            <div className={styles.projectDescription}>
+                                <p>
+                                Apartamento funcional com 51m², distribuído em dois quartos amplos, 
+                                sala conjugada com cozinha seguindo o conceito moderno de ambientes 
+                                abertos, benheiro, área de serviços, mais vaga de garagem, espaçosa, 
+                                independente e demarcada. Fino acabamento e excelente localização.
+                                </p>
+                            </div>
                         </div>
+
+                        <div className={styles.projetoContainer}>
+                            <h3>{index+1}. {labels[index]}</h3>
+                            <img src={projetos[index]} alt="Projeto em 3d do apartamento"/>
+                            <div className={styles.bottomButtonContainer}>
+                                <BsArrowLeft className={styles.section2icon} size={32} color={"rgba(0,0,0,.5)"} onClick={() => decrementIndex()}/>
+                                <BsArrowRight className={styles.section2icon} size={32} color={"rgba(0,0,0,.5)"} onClick={() => incrementIndex()}/>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </Fade>

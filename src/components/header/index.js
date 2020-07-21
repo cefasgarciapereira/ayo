@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from "react"
 import styles from './styles.module.css'
 import OpenMenu from '../openMenu'
-import { FiMenu } from "react-icons/fi";
+import { FiMenu } from "react-icons/fi"
+import logo from '../../images/logo.png'
+
 
 export default function Header(){  
   const [isNavVisible, setIsNavVisible] = useState(false);
@@ -32,7 +34,7 @@ export default function Header(){
   return (
     <div>
       <header className={styles.header}>
-        <a href="" className={styles.logo}>AYO</a>
+        <img className={styles.logo} src={logo} alt="Logo da AYO"/>
           {(!isSmallScreen || isNavVisible) && (
             <nav className={styles.nav}>
             <a>Lançamentos</a>

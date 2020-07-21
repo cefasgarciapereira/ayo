@@ -6,6 +6,7 @@ import Header from '../components/header'
 import Hero from '../components/hero'
 import Section1 from '../components/section1'
 import Section2 from '../components/section2'
+import FaixaParcerias from '../components/faixa_parcerias'
 import Section3 from '../components/section3'
 import Section4 from '../components/section4'
 import Section6 from '../components/section6'
@@ -19,6 +20,7 @@ const IndexPage = () => (
       <Hero/>
       <Section1/>
       <Section2/>
+      <FaixaParcerias/>
       <Section3/>
       <Section4/>
       <Section6/>

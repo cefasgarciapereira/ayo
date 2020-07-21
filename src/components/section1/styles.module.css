@@ -2,6 +2,10 @@
     padding: 0 9rem;
 }
 
+.section1 img{
+    width: 40%;
+}
+
 .section1 h3{
     font-size: 3.6rem;
 }
@@ -36,7 +40,7 @@
 @media (max-width: 1200px) 
 {
     .section1 img{
-        width: 80%;
+        width: 50%;
     }
 }
 

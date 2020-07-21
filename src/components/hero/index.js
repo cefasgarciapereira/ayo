@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from './styles.module.css'
 import Fade from 'react-reveal/Fade'
+import { BsArrowDown } from "react-icons/bs"
 const buildingImage = require('../../images/hero-building.png')
+
 
 export default function Hero(){
 
@@ -28,7 +30,10 @@ export default function Hero(){
                     </div>
                 </Fade>
             
-                <p className={styles.scroll}>Scroll</p>
+                <div className={styles.scroll}>
+                    <p>Scroll</p>
+                    <BsArrowDown className={styles.scrollArrow} size={32} color={"#fff"}/>
+                </div>
             
                 <div className={styles.whiteArea}>
                 </div>

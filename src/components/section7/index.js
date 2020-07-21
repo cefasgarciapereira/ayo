@@ -10,7 +10,7 @@ export default function section7(){
                 <div className={styles.section7Item}>
                     <FiHome size={68} color={'#F99920'}/>
                     <h3>Endereço</h3>
-                    <p>Sala 212, Rua Paraíba 320, Poços de Caldas, Minas Gerais, Brasil.</p>
+                    <p>Rua Paraíba 320, Sala 212, Poços de Caldas, Minas Gerais, Brasil.</p>
                 </div>
 
                 <div className={styles.section7Item}>

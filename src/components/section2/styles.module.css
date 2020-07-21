@@ -5,8 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 1rem 2rem;
-    margin: 2.5rem 0;
-}   
+} 
 
 .section2 h2{
     font-size: 3.6rem;
@@ -17,6 +16,17 @@
 .section2 p{
     text-align: center;
     max-width: 60rem;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction img{
+    width: 100%;
 }
 
 .plantaContainer{
@@ -76,8 +86,16 @@
     cursor: pointer;
 }
 
+.projectDescription{
+    margin: 20px 0 0 0;
+}
+
 @media (min-width: 768px) 
 {
+    .introduction img{
+        width: 25%;
+    }
+
     .plantaAndProjectContainer{
         margin-top: 2.5rem;
         display: flex;
@@ -86,9 +104,21 @@
     }
 
     .plantaContainer, .projetoContainer{
-        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30vw;
         margin: 20px;
         overflow: hidden;
+    }
+
+    .projectDescription{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        justify-self: center;
     }
 
     .plantaContainer img, .projetoContainer img{

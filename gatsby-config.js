@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `AYO Construtora & Engenharia`,
+    title: `Engenharia`,
     description: `A AYO é uma empresa que atua no ramo da engenharia civil e tem como missão entregar e realizar projetos de construção que atendam as necessidades de seus clientes.`,
     author: `Cefas Garcia Pereira`,
   },
@@ -22,9 +22,9 @@ module.exports = {
         short_name: `ayo`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#21346E`,
+        theme_color: `#20336C`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
 
     },

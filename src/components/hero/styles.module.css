@@ -35,6 +35,10 @@
     overflow: hidden;
 }
 
+.text-transition_inner{
+    overflow: hidden;
+}
+
 .text p{
     color: #fff;
 }

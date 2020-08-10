@@ -1,11 +1,20 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import styles from './styles.module.css'
 import Fade from 'react-reveal/Fade'
 import { BsArrowDown } from "react-icons/bs"
+import TextTransition, { presets } from "react-text-transition";
 const buildingImage = require('../../images/hero-building.png')
 
-
 export default function Hero(){
+    const TEXTS = ["Imaginação","Visão","Conhecimento"];
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const intervalId = setInterval(() =>
+          setIndex(index => index + 1),
+          3000 // every 3 seconds
+        );
+      },[]);
 
     return(
         <div className={styles.hero}>
@@ -15,7 +24,13 @@ export default function Hero(){
             <div className={styles.gridContainer}>
                 <Fade left cascade>
                     <div className={styles.text}>
-                        <h1>Conhecimento</h1>
+                        <h1>
+                            <TextTransition
+                            text={ TEXTS[index % TEXTS.length] }
+                            springConfig={ presets.wobbly }
+                            noOverflow
+                            />
+                        </h1>
                         <p>Construir sua casa é mais do que levantar quatro paredes. 
                         Envolve combinar imaginação, visão e o conhecimento técnico para transformar uma obra 
                         em lar. Este é o diferencial da AYO.</p>

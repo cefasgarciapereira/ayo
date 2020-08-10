@@ -34,7 +34,7 @@ export default function Hero(){
                     <p>Scroll</p>
                     <BsArrowDown className={styles.scrollArrow} size={32} color={"#fff"}/>
                 </div>
-            
+             
                 <div className={styles.whiteArea}>
                 </div>
             </div>

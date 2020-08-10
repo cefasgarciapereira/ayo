@@ -12,6 +12,7 @@ import Section4 from '../components/section4'
 import Section6 from '../components/section6'
 import Section7 from '../components/section7'
 import Footer from '../components/footer'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const IndexPage = () => (
     <div>

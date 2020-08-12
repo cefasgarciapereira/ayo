@@ -12,6 +12,7 @@ import Section6 from '../components/section6'
 import Section7 from '../components/section7'
 import Footer from '../components/footer'
 import loadable from '@loadable/component'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Hero = loadable(() => import('../components/hero'))
 

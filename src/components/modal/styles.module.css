@@ -1,0 +1,75 @@
+.mailForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mailForm input, .mailForm textarea{
+    width: 98%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+.mailForm textarea{
+    height: 200px;
+}
+
+.mailForm input:focus, .mailForm textarea:focus{
+    outline: 1px solid #20336C;
+}
+
+.mailForm button{
+    text-transform: uppercase;
+    background-color: transparent;
+    width: 200px;
+    padding: 15px 30px;
+    border: 2px solid #20336C;
+    color: #20336C;
+    font-weight: bold;
+    transition: .5s background-color;
+    align-self: flex-end;
+    margin: 20px 0 0 0;
+}
+
+.mailForm button:hover{
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #20336C;
+    padding: 15px 30px;
+    border: 2px solid #20336C;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.mailForm label{
+    font-size: 1.6rem;
+}
+
+.customButton{
+    text-transform: uppercase;
+    background-color: transparent;
+    max-width: 200px;
+    padding: 15px 30px;
+    border: 2px solid #C0392B;
+    color: #C0392B;
+    font-weight: bold;
+    transition: .5s background-color;
+    align-self: flex-end;
+    margin: 20px 0 0 0;
+    width: 200px;
+}
+.customButton:hover{
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #C0392B;
+    padding: 15px 30px;
+    border: 2px solid #C0392B;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+} 

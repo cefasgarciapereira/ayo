@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
 import styles from './styles.module.css'
 
 export default function MyVerticallyCenteredModal(props) {

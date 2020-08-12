@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import Header from '../components/header'
 import Hero from '../components/hero'
 import Section1 from '../components/section1'
 import Section2 from '../components/section2'
@@ -12,7 +11,10 @@ import Section4 from '../components/section4'
 import Section6 from '../components/section6'
 import Section7 from '../components/section7'
 import Footer from '../components/footer'
+import loadable from '@loadable/component'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+const Header = loadable(() => import('../components/header'))
 
 const IndexPage = () => (
     <div>

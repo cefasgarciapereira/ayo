@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import styles from './styles.module.css'
 import Fade from 'react-reveal/Fade'
 import { BsArrowDown } from "react-icons/bs"
@@ -48,7 +48,7 @@ export default function Hero(){
                     <p>Scroll</p>
                     <BsArrowDown className={styles.scrollArrow} size={32} color={"#fff"}/>
                 </div>
-            
+             
                 <div className={styles.whiteArea}>
                 </div>
             </div>

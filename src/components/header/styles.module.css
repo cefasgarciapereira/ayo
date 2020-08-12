@@ -19,7 +19,7 @@
 .logo{
     color: #fff;
     font-size: 3.6rem;
-    width: 10.6rem;
+    width: 8.4rem;
 }
 
 .burguer{
@@ -33,6 +33,12 @@
         align-items: center;
         justify-content: space-between;
         height: 5vh;
+    }
+
+    .logo{
+        color: #fff;
+        font-size: 3.6rem;
+        width: 5rem;
     }
 
     .nav{

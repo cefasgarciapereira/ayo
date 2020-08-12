@@ -108,6 +108,7 @@
 
     .scroll p {
         color: white;
+        text-align: left;
     }
 
     .imageContainer{

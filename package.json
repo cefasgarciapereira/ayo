@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Cefas Garcia Pereira <cefasgarciapereira@gmail.com>",
   "dependencies": {
+    "@loadable/component": "^5.13.1",
     "add": "^2.0.6",
     "gatsby": "^2.22.15",
     "gatsby-cli": "^2.12.54",
@@ -23,6 +24,7 @@
     "react-helmet": "^6.0.0",
     "react-icons": "^3.10.0",
     "react-reveal": "^1.2.2",
+    "react-text-transition": "^1.1.2",
     "react-typing-animation": "^1.6.2",
     "yarn": "^1.22.4"
   },
@@ -30,7 +32,12 @@
     "prettier": "2.0.5"
   },
   "keywords": [
-    "engenharia", "construtora", "AYO", "Poços de Caldas", "apartamentos", "planejados"
+    "engenharia",
+    "construtora",
+    "AYO",
+    "Poços de Caldas",
+    "apartamentos",
+    "planejados"
   ],
   "license": "MIT",
   "scripts": {

@@ -6,11 +6,11 @@ import TextTransition, { presets } from "react-text-transition";
 const buildingImage = require('../../images/hero-building.png')
 const TEXTS = ["Conhecimento","Visão","Imaginação"];
 export default function Hero(){
-    const [index, setIndex] = React.useState(0);
+    const [index, setIndex] = useState(0);
 
-      React.useEffect(() => {
+    useEffect(() => {
         const intervalId = setInterval(() =>
-          setIndex(index => index + 1),
+          setIndex(index+1),
           3000 // every 3 seconds
         );
       });

@@ -9,11 +9,14 @@ export default function Hero(){
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        const intervalId = setInterval(() =>
-          setIndex(index+1),
-          3000 // every 3 seconds
-        );
-      });
+        const intervalId = setInterval(() => {
+            setIndex(index => index+1);
+        },3000)
+    },[])
+
+    useEffect(() => {
+        console.log(index);
+    },[index])
 
     return(
         <div className={styles.hero}>
@@ -23,11 +26,14 @@ export default function Hero(){
             <div className={styles.gridContainer}>
                 <Fade left cascade>
                     <div className={styles.text}>
-                        <h1>
+                        <h1
+                        style={{overflow: 'hidden'}}
+                        >
                         <TextTransition
                         text={ TEXTS[index % TEXTS.length] }
                         springConfig={presets.molasses}
                         noOverflow
+                        style={{overflow: 'hidden'}}
                         />
                         </h1>
                         <p>Construir sua casa é mais do que levantar quatro paredes. 

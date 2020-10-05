@@ -33,7 +33,8 @@ export default function Section2(){
             setIndex(projetos.length - 1)
         }
     }
-
+    console.log(index);
+    console.log(projetos[index]);
     return(
         <div className={styles.section2}>
             <Fade clear cascade>

@@ -19,19 +19,32 @@ const Hero = loadable(() => import('../components/hero'))
 
 
 const IndexPage = () => (
-    <div>
-      <SEO title="AYO" />
-      <Header/>
-      <Hero/>
-      <Section1/>
-      <Section2/>
-      <FaixaParcerias/>
-      <Section3/>
-      <Section4/>
-      <Section6/>
-      <Section7/>
-      <Footer/>
-    </div>
+  <div
+  style={{
+    width: '100vw',
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center'
+  }}>
+    <h1 style={{color: 'red'}}>This site was taken down for lack of payment.</h1>
+    <h3>If you have any issues, please contact the owner.</h3>
+    {/*<div>
+    <SEO title="AYO" />
+    <Header/>
+    <Hero/>
+    <Section1/>
+    <Section2/>
+    <FaixaParcerias/>
+    <Section3/>
+    <Section4/>
+    <Section6/>
+    <Section7/>
+    <Footer/>
+    </div>*/}
+  </div>
 )
 
 export default IndexPage

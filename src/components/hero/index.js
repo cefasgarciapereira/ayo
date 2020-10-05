@@ -5,15 +5,24 @@ import { BsArrowDown } from "react-icons/bs"
 import TextTransition, { presets } from "react-text-transition";
 const buildingImage = require('../../images/hero-building.png')
 const TEXTS = ["Conhecimento","Visão","Imaginação"];
-export default function Hero(){
-    const [index, setIndex] = useState(0);
 
-    useEffect(() => {
-        const intervalId = setInterval(() =>
-          setIndex(index+1),
-          3000 // every 3 seconds
-        );
-      });
+let intervalId;
+
+export default function Hero(){
+    const [index, setIndex] = React.useState(0);
+
+    React.useEffect(() => {
+      const intervalId = setInterval(() =>
+        {setIndex(index => index + 1); 
+            console.log(index);
+            if(index > 10){
+                clearInterval(intervalId);
+                setIndex(0);
+            }
+        },
+        3000 // every 3 seconds
+      );
+    });
 
     return(
         <div className={styles.hero}>
@@ -26,7 +35,7 @@ export default function Hero(){
                         <h1>
                         <TextTransition
                         text={ TEXTS[index % TEXTS.length] }
-                        springConfig={presets.molasses}
+                        springConfig={presets.default}
                         noOverflow
                         />
                         </h1>

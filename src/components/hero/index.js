@@ -11,6 +11,7 @@ let intervalId;
 export default function Hero(){
     const [index, setIndex] = React.useState(0);
 
+<<<<<<< HEAD
     React.useEffect(() => {
       const intervalId = setInterval(() =>
         {setIndex(index => index + 1); 
@@ -23,6 +24,17 @@ export default function Hero(){
         3000 // every 3 seconds
       );
     });
+=======
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setIndex(index => index+1);
+        },3000)
+    },[])
+
+    useEffect(() => {
+        console.log(index);
+    },[index])
+>>>>>>> 9f2db9b3b01c8ad706ae0955b9952d25e4132545
 
     return(
         <div className={styles.hero}>
@@ -32,11 +44,14 @@ export default function Hero(){
             <div className={styles.gridContainer}>
                 <Fade left cascade>
                     <div className={styles.text}>
-                        <h1>
+                        <h1
+                        style={{overflow: 'hidden'}}
+                        >
                         <TextTransition
                         text={ TEXTS[index % TEXTS.length] }
                         springConfig={presets.default}
                         noOverflow
+                        style={{overflow: 'hidden'}}
                         />
                         </h1>
                         <p>Construir sua casa é mais do que levantar quatro paredes. 

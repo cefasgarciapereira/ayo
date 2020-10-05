@@ -1,7 +1,7 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import styles from './styles.module.css'
-const ayoPocos = require('../../images/ayo-pocos.png')
+const ayoPocos = require('../../images/undraw_building.svg')
 
 export default function Section3(){
     
@@ -10,16 +10,14 @@ export default function Section3(){
     return(
         <div className={styles.section3}>
             <Fade left cascade>
-                <div>
+                <div className={styles.content}>
                     <h3>{underlineText('Viemos')} pra ficar</h3>
                     <p>Estamos no nosso primeiro projeto, construindo em Poços de Caldas, porém prezando muito 
                         pela qualidade e excelência na entrega do nosso trabalho.</p>
                 </div>
             </Fade>
             <Fade right>
-                <div>
-                    <img src={ayoPocos} style={{width: '100%'}} alt="Logo da ayo engenharia"/>
-                </div>
+                <img src={ayoPocos} alt="Logo da ayo engenharia"/>
             </Fade>
         </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css'
-import logo from '../../images/logo2.png'
+import logo from '../../images/logo.png'
 import marcon from '../../images/marcon.png'
 import Fade from 'react-reveal/Fade'
 

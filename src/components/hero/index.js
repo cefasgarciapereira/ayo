@@ -11,20 +11,6 @@ let intervalId;
 export default function Hero(){
     const [index, setIndex] = React.useState(0);
 
-<<<<<<< HEAD
-    React.useEffect(() => {
-      const intervalId = setInterval(() =>
-        {setIndex(index => index + 1); 
-            console.log(index);
-            if(index > 10){
-                clearInterval(intervalId);
-                setIndex(0);
-            }
-        },
-        3000 // every 3 seconds
-      );
-    });
-=======
     useEffect(() => {
         const intervalId = setInterval(() => {
             setIndex(index => index+1);
@@ -34,7 +20,6 @@ export default function Hero(){
     useEffect(() => {
         console.log(index);
     },[index])
->>>>>>> 9f2db9b3b01c8ad706ae0955b9952d25e4132545
 
     return(
         <div className={styles.hero}>
